@@ -7,8 +7,10 @@
   export let episode: Episode;
 </script>
 
-<div>
+<div style="margin: 32px;">
   <Link to={`/${showId}/${seasonId}/${episode.id}`}>
+    <img width="200px" src={episode.thumbnail} alt="thumb" />
+    <br />
     Episode {episode.number} - {episode.name}
   </Link>
 </div>

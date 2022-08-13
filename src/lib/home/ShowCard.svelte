@@ -6,6 +6,10 @@
   export let show: Show;
 </script>
 
-<div>
-  <Link to={`/${show.id}`}>{show.name}</Link>
+<div style="display: inline-block; margin: 32px;">
+  <Link to={`/${show.id}`}>
+    <img width="200px" src={show.thumbnail} alt="thumb" />
+    <br />
+    {show.name}
+  </Link>
 </div>

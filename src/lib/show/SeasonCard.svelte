@@ -7,6 +7,10 @@
   export let season: Season;
 </script>
 
-<div>
-  <Link to={`/${showId}/${season.id}`}>{season.name}</Link>
+<div style="display: inline-block; margin: 32px;">
+  <Link to={`/${showId}/${season.id}`}>
+    <img width="200px" src={season.thumbnail} alt="thumb" />
+    <br />
+    {season.name}
+  </Link>
 </div>

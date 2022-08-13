@@ -24,7 +24,9 @@
 <h2>{show.name} - {season.name}</h2>
 <h1>{episode.name}</h1>
 
-<p>{url}</p>
-
 <!-- svelte-ignore a11y-media-has-caption -->
-<video src={url} controls width="1000px" />
+<video src={url} controls width="1200px" />
+
+<br /><br />
+
+<a style="font-size: 14px;" href={url}>{url}</a>

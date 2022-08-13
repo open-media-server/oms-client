@@ -10,8 +10,9 @@ export interface Show {
   description?: string;
   original_name?: string;
   air_date?: string;
-  rating?: any;
+  rating?: number;
   credits?: any;
+  thumbnail?: string;
 }
 
 export interface Season {
@@ -20,6 +21,7 @@ export interface Season {
   id: number;
   episodes: Episode[];
   air_date?: string;
+  thumbnail?: string;
 }
 
 export interface Episode {
@@ -27,4 +29,5 @@ export interface Episode {
   number: number;
   id: number;
   path: string;
+  thumbnail?: string;
 }
